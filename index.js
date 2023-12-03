@@ -5,8 +5,12 @@ p.forEach((value, index, array) => {
   value.addEventListener("click", (e) => {
     if (value.innerText === "=") {
       if (input.value !== "") {
-        out = eval(input.value);
-        input.value = out;
+        try {
+          out = eval(input.value);
+          input.value = out;
+        } catch (err) {
+          input.value = "Syntax Error";
+        }
       }
     } else if (value.innerText == "AC") {
       input.value = "";
@@ -27,9 +31,17 @@ const append = (num) => {
 };
 function calculate() {
   if (input2.value.includes(".")) {
-    return (input2.value = eval(input2.value).toFixed(4));
+    try {
+      input2.value = eval(input2.value).toFixed(4);
+    } catch (err) {
+      input2.value = "Syntax Error";
+    }
   }
-  input2.value = eval(input2.value);
+  try {
+    input2.value = eval(input2.value);
+  } catch (err) {
+    input2.value = "Syntax Error";
+  }
 }
 function del() {
   input2.value = input2.value.slice(-input2.value.length - 1, -1);
