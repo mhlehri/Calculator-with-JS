@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  background: #fcfcfc;
+}
+h3,
+p {
+  text-transform: uppercase;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  gap: 10px;
+}
+.output {
+  grid-column: 1 / -1;
+  padding: 10px;
+  border: none;
+  text-align: right;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px gray;
+  outline: none;
+}
+.equal {
+  grid-column: 3 / span 2;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.container .p1 {
+  padding: 8px;
+  color: black;
+  box-shadow: 1px 1px 5px gray;
+  align-self: stretch;
+  line-height: full;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #333;
+  padding: 24px;
+  border-radius: 8px;
+}
+.output2 {
+  grid-column: 1 / -1;
+  background: rgb(44, 44, 212);
+  color: white;
+  text-align: end;
+  padding: 6px;
+  outline: none;
+}
+.p2 {
+  color: white;
+  align-self: stretch;
+  line-height: full;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px;
+  border: 2px solid white;
+}
+.p2:hover {
+  background: white;
+  color: black;
+}
+.container p:hover {
+  color: white;
+  background: #000;
+}

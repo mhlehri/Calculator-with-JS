@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h3 style="text-align: center">Calculator 1</h3>
+      <div class="container">
+        <input
+          type="text"
+          placeholder="Calculate"
+          class="output"
+          name=""
+          id="output"
+        />
+        <p class="p1 num1">1</p>
+        <p class="p1 num2">2</p>
+        <p class="p1 num3">3</p>
+        <p class="p1 plus">+</p>
+        <p class="p1 num4">4</p>
+        <p class="p1 num5">5</p>
+        <p class="p1 num6">6</p>
+        <p class="p1 minus">-</p>
+        <p class="p1 num7">7</p>
+        <p class="p1 num8">8</p>
+        <p class="p1 num9">9</p>
+        <p class="p1 divide">/</p>
+        <p class="p1 num0">0</p>
+        <p class="p1 num0">.</p>
+        <p class="p1 mudulus">%</p>
+        <p class="p1 multiply">*</p>
+        <p class="p1 ac">AC</p>
+        <p class="p1 Del">Del</p>
+        <p class="p1 equal">=</p>
+      </div>
+    </div>
+    <div>
+      <h3 style="text-align: center">Calculator 2</h3>
+      <div class="container2">
+        <input
+          type="text"
+          placeholder="Calculate"
+          class="output2"
+          name=""
+          id="output2"
+        />
+        <p class="p2 num1" onclick="append('1')">1</p>
+        <p class="p2 num2" onclick="append('2')">2</p>
+        <p class="p2 num3" onclick="append('3')">3</p>
+        <p class="p2 plus" onclick="append('+')">+</p>
+        <p class="p2 num4" onclick="append('4')">4</p>
+        <p class="p2 num5" onclick="append('5')">5</p>
+        <p class="p2 num6" onclick="append('6')">6</p>
+        <p class="p2 minus" onclick="append('-')">-</p>
+        <p class="p2 num7" onclick="append('7')">7</p>
+        <p class="p2 num8" onclick="append('8')">8</p>
+        <p class="p2 num9" onclick="append('9')">9</p>
+        <p class="p2 divide" onclick="append('/')">/</p>
+        <p class="p2 num0" onclick="append('0')">0</p>
+        <p class="p2 num0" onclick="append('.')">.</p>
+        <p class="p2 mudulus" onclick="append('%')">%</p>
+        <p class="p2 multiply" onclick="append('*')">*</p>
+        <p class="p2 c" onclick="C()">C</p>
+        <p class="p2 Del" onclick="del()">Del</p>
+        <p class="p2 equal" onclick="calculate()">=</p>
+      </div>
+    </div>
+    <script src="/dom.js"></script>
+  </body>
+</html>
